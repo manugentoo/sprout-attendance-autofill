@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Sprout Attendance Autofill Generator by Manu Gentoo",
+  "version": "1.0",
+  "description": "Auto-generates attendance rows skipping weekends.",
+  "permissions": ["scripting", "activeTab"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
