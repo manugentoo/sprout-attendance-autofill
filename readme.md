@@ -42,7 +42,7 @@ To install this Chrome Extension manually:
 1. **Download or clone** this repository to your computer:
 
 ```bash
-git clone https://github.com/yourusername/attendance-autofill.git
+git clone https://github.com/manugentoo/sprout-attendance-autofill
 ```
 2. **Open Chrome** and go to `chrome://extensions/`
 3. Enable **Developer mode** (top right corner)
