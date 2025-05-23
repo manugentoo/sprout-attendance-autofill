@@ -20,46 +20,6 @@ A lightweight Chrome extension that automates filling out attendance logs in Spr
 
 ---
 
-## 🧭 How to Use (with Sprout HR)
-
-1. **Login to [Sprout HR](https://app.sprout.ph)**
-2. Navigate to:  
-   `My Requests` → `Certificate of Attendance`
-3. Click the **Add** button to open the form
-4. Click the **Attendance Autofill extension icon** in your browser
-5. Choose your **From** and **To** dates
-6. Click **Generate** — the form will be auto-filled for all weekdays
-
-> 🛑 Weekends are automatically skipped  
-> 🧠 Each day gets two rows: one for `In` at 08:00, and one for `Out` at 17:00
-
----
-
-## 🛠 Installation Guide (Chrome)
-
-To install this Chrome Extension manually:
-
-1. **Download or clone** this repository to your computer:
-
-```bash
-git clone https://github.com/manugentoo/sprout-attendance-autofill
-```
-2. **Open Chrome** and go to `chrome://extensions/`
-3. Enable **Developer mode** (top right corner)
-4. Click on **Load unpacked**
-5. Select the folder where you cloned/downloaded the repository
-6. The extension should now be installed and visible in your extensions list
-
-
-📂 Folder Structure
-```bash
-attendance-autofill/
-├── manifest.json          # Chrome extension config
-├── popup.html             # Extension popup interface
-├── popup.js               # Main logic that simulates form filling
-├── content.js             # Content script that interacts with the Sprout HR page
-```
-
 ## 💡 How It Works
 
 The extension performs the following steps:
@@ -79,6 +39,49 @@ The extension performs the following steps:
 
 This simulation ensures that Sprout’s front-end form validations — which require manual user input — are satisfied automatically.
 
+---
+
+## 🛠 Installation Guide (Chrome)
+
+To install this Chrome Extension manually:
+
+1. **Download or clone** this repository to your computer:
+
+```bash
+git clone https://github.com/manugentoo/sprout-attendance-autofill
+```
+2. **Open Chrome** and go to `chrome://extensions/`
+3. Enable **Developer mode** (top right corner)
+4. Click on **Load unpacked**
+5. Select the folder where you cloned/downloaded the repository
+6. The extension should now be installed and visible in your extensions list
+
+---
+
+## 🧭 How to Use (with Sprout HR)
+
+1. **Login to [Sprout HR](https://app.sprout.ph)**
+2. Navigate to:  
+   `My Requests` → `Certificate of Attendance`
+3. Click the **Add** button to open the form
+4. Click the **Attendance Autofill extension icon** in your browser
+5. Choose your **From** and **To** dates
+6. Click **Generate** — the form will be auto-filled for all weekdays
+
+> 🛑 Weekends are automatically skipped  
+> 🧠 Each day gets two rows: one for `In` at 08:00, and one for `Out` at 17:00
+
+---
+
+## 📂 Folder Structure
+```bash
+attendance-autofill/
+├── manifest.json          # Chrome extension config
+├── popup.html             # Extension popup interface
+├── popup.js               # Main logic that simulates form filling
+├── content.js             # Content script that interacts with the Sprout HR page
+```
+---
 ## 📄 License
 
 This project is open-source and available under the MIT License.
